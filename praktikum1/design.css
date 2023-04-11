@@ -1,0 +1,38 @@
+* {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0 auto;
+    padding: 0 auto;
+    max-width: 600px;
+}
+.Atas {
+    text-align: center;
+}
+a {
+    color: rgb(212, 11, 252); 
+    text-decoration: none;
+}
+b {
+    font-size: 29px;
+}
+h3 {
+    padding: 15px 0;
+}
+ol{
+    font-size: 13px;
+}
+h1 {
+    padding: 10px 0;
+    line-height: 1.0;
+    font-size: 48px;
+}
+h2 {
+    padding: 15px 0;
+    font-size: 20px;
+    line-height: 1.0;
+}
+p{
+    font-size: 13px;
+}
+span{
+    font-size: smaller;
+}

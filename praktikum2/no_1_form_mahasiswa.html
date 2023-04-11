@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+        }
+        h1 {
+            text-align: center;
+        }
+
+        .form {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+        .Kolom {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 30px;
+        }
+        label{
+            margin-bottom: 5px;
+        }
+        .box{
+            display: flex;
+            flex-direction: column;
+            width: 50rem;
+            margin: auto;
+        }
+        button{
+            background-color: blue;
+            padding: 10px;
+            border-radius: 5px;
+            border: none;
+            color: white;
+        }
+        .judul {
+            padding: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="judul">
+        <h1>Pendaftaran Mahasiswa Baru</h1>
+    </div>
+    <div class="box">
+        <form action="" class="form">
+            <div class="Kolom">
+                <label for="npm">NPM (Nomor Pokok Mahasiswa)</label>
+                <input type="number" name="npm" id="npm">
+            </div>
+            <div class="Kolom">
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" name="nama" id="nama">
+            </div>
+            <div class="Kolom">
+                <label for="alamat">Alamat</label>
+                <textarea name="alamat" id="alamat" rows="3"></textarea>
+            </div>
+            <div class="Kolom">
+                <label for="npm">Jenis Kelamin</label>
+                <div class="radios">
+                    <input type="radio" name="kelamin"> Laki Laki
+                </div>
+                <div>
+                    <input type="radio" name="kelamin"> Perempuan
+                </div>
+            </div>
+            <div class="Kolom">
+                <label for="studi">Jurusan</label>
+                <select name="studi" id="studi" style="padding: 4px;">
+                    <option value="TI">Informatika</option>
+                    <option value="SI">Sistem Informasi</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit">Tambah</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>
