@@ -12,5 +12,5 @@ function fibonacci(n) {
     }
   }
   
-  printFibonacciSequence(10);
+  console.log(printFibonacciSequence(10));
   
