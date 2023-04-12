@@ -1,19 +1,19 @@
 let citypop = document.querySelector(".citypop");
 let audio = document.createElement("audio");
-audio.src = "assets/pre.mp3";
+audio.src = "assets/pre.mp3"; /* Bisa diganti */
 let phonk = document.querySelector(".phonk");
 let audio2 = document.createElement("audio");
-audio2.src = "assets/pre2.mp3";
+audio2.src = "assets/pre2.mp3"; /* Bisa diganti */
 let pop = document.querySelector(".pop");
 let audio3 = document.createElement("audio");
-audio3.src = "assets/pre3.mp3";
+audio3.src = "assets/pre3.mp3"; /* Bisa diganti */
 
 let full1 = document.createElement("audio");
-full1.src = "assets/lagu1.mp3";
+full1.src = "assets/lagu1.mp3"; /* Bisa diganti */
 let full2 = document.createElement("audio");
-full2.src = "assets/lagu2.mp3";
+full2.src = "assets/lagu2.mp3"; /* Bisa diganti */
 let full3 = document.createElement("audio");
-full3.src = "assets/lagu3.mp3";
+full3.src = "assets/lagu3.mp3"; /* Bisa diganti */
 
 document.body.appendChild(audio);
 citypop.onmouseover = () => {
