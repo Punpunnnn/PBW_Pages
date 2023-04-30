@@ -302,7 +302,6 @@ footer .text span a:hover{
 }
 .praktikum2, .judul1{
   opacity: 0;
-  width: 100%;
   filter: blur(5px);
   transform: translateX(100%);
   transition: all 1s;
