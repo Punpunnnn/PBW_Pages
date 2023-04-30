@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Gorengan.com</title>
+</head>
+<body>
+    <div class="menu">
+        <div class="header">
+            <h1>Gorengan.Com</h1>
+        </div>
+            <div class="container">
+                <div class="item">
+                    <img src="assets/bala-bala.jpg" alt="bala-bala">
+                    <h3>bala-bala</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                    <span>Rp 50.000</span>
+                    <button onclick="addToCart('bala-bala')">Tambah ke Keranjang</button>
+                </div>
+                <div class="item">
+                    <img src="assets/pisang goreng.jpg" alt="Pisang Goreng">
+                    <h3>Pisang Goreng</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                    <span>Rp 40.000</span>
+                    <button onclick="addToCart('Pisang Goreng')">Tambah ke Keranjang</button>
+                </div>
+                <div class="item">
+                    <img src="assets/cireng isi.jpg" alt="cireng">
+                    <h3>cireng isi</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat delectus aliquam molestiae fugiat cupiditate natus!</p>
+                    <span>Rp 60.000</span>
+                    <button onclick="addToCart('cireng isi')">Tambah ke Keranjang</button>
+                </div>
+            </div>
+            <div class="cart">
+                <h2>Keranjang Belanja</h2>
+            <div class="keranjang">
+                <ul id="cart-items">
+                </ul>
+            </div>      
+            <div class="total">    
+            <p class="checkout">Total:Rp<span id="cart-total">0</span></p>
+            <button class="press" onclick="checkout()">Checkout</button>
+            </div>
+            
+            </div>
+        </div>
+    <script src="script.js"></script>
+</body>
+</html>

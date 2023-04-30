@@ -1,21 +1,34 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@700&display=swap');
+
+:root {
+  --primary: #F6EADE;
+  --bg: #443d3e;
+  --bg2: #645A5B;
+  --bg3: #887b7c;
+  --accent: #295fcb;
+}
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
     scroll-behavior: smooth;
+    
+}
+.body {
+  overflow-x: hidden;
 }
 /* Styling Header */
 header {
     display: inline;
 }
 .nickname {
+    color: #FFFFFF;
     cursor: pointer;
 }
 .nickname :hover{
-    color:#43c6ac;
+    color:var(--primary);
 }
 .Present {
     width: 100%;
@@ -26,7 +39,8 @@ header {
     object-fit: cover;
 }
 nav {
-    background-color: #191645;
+    background-color: var(--bg2);
+    border-bottom: 2px solid white;
     width: 100%;
     position: sticky;
     top: 0;
@@ -54,33 +68,33 @@ nav ul li {
 }
 .nickname p, nav ul li a{
     text-decoration: none;
-    color: #ffffff;
+    color: #FFFFFF;
     font-size: 18px;
     font-weight: bold;
     transition: 0.5s;
 }
 nav ul li a:hover {
-  color: #43c6ac;
+  color: var(--primary);
 }
 .pembuka {
     text-align: center;
 }
 .pembuka h1{
-   font-size: clamp(50px, 10vw,200px);
-   color: white;
+   -webkit-text-stroke: 0.2rem #fff;
+   color: transparent;
    font-weight: 600;
+   font-size: clamp(50px, 10vw,200px);
    transition: 0.5s;
-}
+}   
 .pembuka h1:hover {
-  -webkit-text-stroke: 2px #fff;
-  color: transparent;
+  color: white;
 }
 .pembuka a{
     text-decoration: none;
     display: inline-block;
     color: white;
-    font-size: clamp(11px, 3vw,30px);
-    border: 2px solid white;
+    font-size: 2rem;
+    border: 0.2rem solid white;
     padding: 14px 70px;
     border-radius: 50px;
     margin-top: 20px;
@@ -89,7 +103,7 @@ nav ul li a:hover {
 .back-video {
   position: fixed;
   width: 100%;
-  height:100%;
+  height:100vh;
   z-index:-999;
   margin-bottom: 0px;
   object-fit: cover;
@@ -97,18 +111,30 @@ nav ul li a:hover {
 
 /*kolom praktikum */
 main {
-    padding-top: 75px;
-    background-color: #191645;
+    padding-top: 5rem;
+    background-color: #443d3e;
     justify-content: center;
     align-items: center;
+
 }
-.praktikum {
+.bg {
+  background-color: var(--bg);
+}
+.bg2 {
+  background-color: var(--bg2);
+}
+.bg3 {
+  background-color: var(--bg3);
+}
+.praktikum1, .praktikum2 {
     padding-bottom: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
+    
 }
-.judul p {
+.judul1 p, .judul2 p{
+   padding-top: 1rem;
    font-size: 24px;
    color: #FFFFFF;
    text-align: center;
@@ -138,7 +164,8 @@ main {
     font-size: 25px;
 }
 .caption:hover {
-    color:#43c6ac;
+    color:var(--primary);
+    font-weight: bold;
     transition: ease-in-out 0.2s;
 }
 /*kolom profile */
@@ -151,13 +178,14 @@ aside {
   width: 300px;
   border-radius: 50%;
   border: 5px solid transparent;
-  background-color: rgb(0, 0, 0);
+  background-color: var(--bg3);
+  transition: linear 0.2s;
 }
 .foto p {
   margin: 50px 100px;
   font-weight: bold;
   font-size: clamp(14px, 2vw, 20px);
-  color: #191645;
+  color: var(--bg2);
   line-height: 40px;
   font-family: '', sans-serif; 
 }
@@ -165,7 +193,7 @@ aside {
   padding-bottom: 20px;
   font-weight: bold;
   font-size: clamp(25px, 2vw,30px);
-  color: #43c6ac;
+  color: var(--bg);
 }
 
 .foto {
@@ -189,7 +217,7 @@ ul{
 	list-style: none;
 }
 footer{
-	background-color: #191645;
+	background-color: var(--bg);
     padding: 30px 0 0 0;
 }
 .container {
@@ -212,7 +240,7 @@ footer{
 	position: absolute;
 	left:0;
 	bottom: -10px;
-	background-color: #43c6ac;
+	background-color: var(--bg3);
 	height: 2px;
 	box-sizing: border-box;
 	width: 50px;
@@ -231,7 +259,7 @@ footer{
 	transition: all 0.3s ease;
 }
 .footer-col ul li a:hover{
-	color: #43c6ac;
+	color: var(--primary) ;  
 	padding-left: 8px;
 }
 .footer-col .social-links a{
@@ -247,7 +275,7 @@ footer{
 	transition: all 0.5s ease;
 }
 .footer-col .social-links a:hover{
-	color: #43c6ac;
+	color: var(--bg3);
 	background-color: #ffffff;
 }
 footer .text {
@@ -268,4 +296,24 @@ footer .text span a{
 }
 footer .text span a:hover{
   text-decoration: underline;
+}
+
+.praktikum1, .judul2{
+  opacity: 0;
+  filter: blur(5px);
+  transform: translateX(-100%);
+  transition: all 1s;
+}
+.praktikum2, .judul1{
+  opacity: 0;
+  width: 100%;
+  filter: blur(5px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.show {
+opacity: 1;
+filter: blur(0);
+transform: translateY(0);
 }
